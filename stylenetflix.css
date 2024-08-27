@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+   
+    background-size: cover;
+    width: 100%;
+    height:150vh;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.2)), url("Netflix-Background.jpg");
+    position: relative;
+}
+.nav-logo{
+    margin-top: 20px;
+    height: 60px;
+    width: 160px;
+    margin-left: 20px;
+}
+
+.logo{
+    background-image: url("netflix-logo.png");
+    width: 100%;
+    height: 45px;
+    background-size: cover;
+    cursor: pointer;
+}
+.lang{
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+    height: 100px;
+    width: 500x;
+}
+
+.signin{
+    border: none;
+    outline: 0;
+   background-color: #e50914;;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px,20px;
+    border-radius: 4px;
+    margin-left:10px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 20px;
+    height: 35px;
+    width: 100px;
+
+}
+
+.language{
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px,20px;
+
+}
+
+.nav-body{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   margin-top: 100px;
+   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.nav-body h1{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    font-weight: 600;
+    max-width: 650px;
+    line-height: 70px;
+}
+
+.nav-body h3{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 400;
+    
+}
+
+p{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.email-signup{
+    margin-top: 10px;
+    height: 100px;
+}
+
+.email-signup input{
+    color: white;
+    height: 60px;
+    background-color: transparent; 
+    width: 400px; 
+    border: 3px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.email-signup button{
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    height: 55px;
+    width: 180px;
+    margin-left: 5px;
+    padding: 15px,30px;
+    font-size: 18px;
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-radius: 6px;
+}
+.features{
+    height: 400px;
+    width: 100%;
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row{
+    height: 500px;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding: 50px,0;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    
+}
+.img-col img{
+   
+    margin:auto;
+    width: 90%;
+   display: block;
+}
+
+
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.according{
+    width: 100%;
+    max-width: 750px;
+    margin: 60px auto;
+}
+
+.according li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.according li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.according .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+
+.faq h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.according input[type="radio"]:checked +label+ .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.according input[type="radio"]:checked +label::after{
+    transform: rotate(135deg);
+}
+
+.nav-sign{
+    text-align: center;
+    margin-top: 0px;
+   
+    
+}
+.nav-sign h4{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.membership{
+    margin-top: 30px;
+}
+
+.membership input{
+    height: 65px;
+    width: 400px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 50px;
+
+}
+.membership button{
+    height:65px;
+    width:250px;
+    background-color: #e50914;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 0px;
+}
+.foot{
+    margin-left: 0px;
+}
+.footer{
+    margin-top: 200px;
+   font-family:sans-serif;
+   display: flex;
+   justify-content: space-evenly;
+ 
+  
+}
+   
+
+.footer li{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.7);;
+   
+   
+      
+}
+
+.footer a{
+    color:rgba(255, 255, 255, 0.7);
+
+}
+
+.footer button{
+    background-color: transparent;
+    color: white;
+    height: 35px;
+    width: 110px;
+    border: 2px solid white;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 0px;
+    cursor:pointer;
+}
+
+.footer-1{
+    margin-right: 150px;
+   
+}
+
+.footer-2{
+    margin-left:0px;
+}
+
+.footer-3{
+    margin-left: 110px;
+}
+.footer-4{
+    margin-left:80px;
+}
+
+.divider{
+    width: 100%;
+    height: 4px;
+    background-color: silver;
+  
+}
